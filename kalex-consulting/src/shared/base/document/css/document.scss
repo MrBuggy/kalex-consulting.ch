@@ -1,0 +1,20 @@
+@import "../../../utils/layouts/css/layouts.scss";
+@import "../../../utils/lists/css/lists.scss";
+@import "../../../utils/webfonts/css/webfonts.scss";
+
+body {
+    font-family: $montserrat-regular, $font-family-fallback;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    @include list-reset();
+}
