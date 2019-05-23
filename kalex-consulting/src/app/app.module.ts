@@ -4,11 +4,13 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 import { AppComponent } from './app.component';
 import { KxImageComponent } from './components/atoms/kx-image/kx-image.component';
+import { KxStageHeaderComponent } from './components/organisms/kx-stage-header/kx-stage-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KxImageComponent
+    KxImageComponent,
+    KxStageHeaderComponent
   ],
   imports: [
     BrowserModule,
