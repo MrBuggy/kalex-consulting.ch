@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+// import base document styles
+@import "~bootstrap-4-grid/css/grid.min.css";
+@import "./shared/base/webfonts/css/webfonts.scss";
+@import "./shared/base/document/css/document.scss";

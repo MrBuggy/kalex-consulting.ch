@@ -1,0 +1,114 @@
+@import '../../../../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../../../../shared/utils/colors/css/colors.scss';
+@import '../../../../shared/utils/spacings/css/spacings.scss';
+@import '../../../../shared/utils/typos/css/typos.scss';
+
+$mq-size-1400: 1400px;
+$mq-size-1600: 1600px;
+
+.stage-header {
+    border-bottom: 5px solid $kx-blue;
+    position: relative;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        border-bottom: none;
+    }
+
+    @media (min-width: $mq-size-1400) {
+        &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            top: 0;
+            right: 0;
+            opacity: 0.7;
+            -moz-transform: scale(0.999);
+            -webkit-backface-visibility: hidden;
+            border-bottom: 850px solid transparent;
+            border-right: 1000px solid $kx-blue;
+        }
+    }
+
+    @media (min-width: $mq-size-1600) {
+        &::after {
+            border-right: 1200px solid $kx-blue;
+        }
+    }
+
+    @media (min-width: $mq-size-xl) {
+        &::after {
+            border-right: 1300px solid $kx-blue;
+        }
+    }
+}
+
+.stage-header__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+
+    @media (min-width: $mq-size-m) {
+        height: 150px;
+        padding: $space-medium;
+        position: relative;
+
+    }
+
+    @media (min-width: $mq-size-l) {
+        z-index: 2;
+    }
+}
+
+.stage-header__image {
+    height: 52px;
+    width: 110px;
+
+    @media (min-width: $mq-size-m) {
+        height: 105px;
+        width: 220px;
+    }
+}
+
+.stage-header__nav-list {
+    display: none;
+
+    @media (min-width: $mq-size-m) {
+        display: flex;
+    }
+}
+
+.stage-header__nav-list-item {
+    color: $kx-blue-dark;
+    margin-right: $space-super-large;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (min-width: $mq-size-m) {
+        @include typo-light();
+        font-size: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width: $mq-size-1400) {
+        color: $white;
+    }
+}
+
+.stage-header__bg-image {
+    display: none;
+
+    @media (min-width: $mq-size-m) {
+        display: block;
+        height: 700px;
+        width: 100%;
+    }
+}
