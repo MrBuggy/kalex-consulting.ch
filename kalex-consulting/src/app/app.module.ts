@@ -7,6 +7,8 @@ import { KxImageComponent } from './components/atoms/kx-image/kx-image.component
 import { KxStageHeaderComponent } from './components/organisms/kx-stage-header/kx-stage-header.component';
 import { KxTeaserComponent } from './components/molecules/kx-teaser/kx-teaser.component';
 import { KxHeadingComponent } from './components/atoms/kx-heading/kx-heading.component';
+import { KxTextImageComponent } from './components/molecules/kx-text-image/kx-text-image.component';
+import { KxAdressesComponent } from './components/molecules/kx-adresses/kx-adresses.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { KxHeadingComponent } from './components/atoms/kx-heading/kx-heading.com
     KxImageComponent,
     KxStageHeaderComponent,
     KxTeaserComponent,
-    KxHeadingComponent
+    KxHeadingComponent,
+    KxTextImageComponent,
+    KxAdressesComponent
   ],
   imports: [
     BrowserModule,

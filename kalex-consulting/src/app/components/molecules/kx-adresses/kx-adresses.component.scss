@@ -3,36 +3,36 @@
 @import '../../../../shared/utils/spacings/css/spacings.scss';
 @import '../../../../shared/utils/typos/css/typos.scss';
 
-.teaser {
+.adresses {
 
 }
 
-.teaser__wrapper {
+.adresses-wrapper {
     display: flex;
     flex-direction: column;
 
     @media (min-width: $mq-size-m) {
         flex-direction: row;
+        justify-content: center;
     }
 }
 
-.teaser__content {
-    background-color: $kx-blue;
-    color: $white;
+.adresses__content {
+    align-items: center;
+    color: $kx-blue;
     display: flex;
+    font-size: 20px;
     flex-direction: column;
-    height: 300px;
-    opacity: 0.9;
-    padding: $space-medium-desktop $space-large;
-    margin-bottom: $space-medium;
+    margin-bottom: $space-medium-desktop;
 
     &:last-child {
         margin-bottom: 0;
     }
 
     @media (min-width: $mq-size-m) {
+        align-items: flex-start;
         margin-bottom: 0;
-        margin-right: $space-super-small;
+        margin-right: $space-xx-large;
 
         &:last-child {
             margin-right: 0;
@@ -40,16 +40,6 @@
     }
 }
 
-.teaser__title {
+.adresses__name {
     @include typo-semibold();
-    font-size: 22px;
-    padding-bottom: $space-small;
-}
-
-.teaser__text {
-    font-size: 16px;
-
-    @media (min-width: $mq-size-m) {
-        opacity: 0;
-    }
 }

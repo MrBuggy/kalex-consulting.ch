@@ -1,0 +1,11 @@
+<div class="adresses">
+    <kx-heading [text]="'Kontakt'"></kx-heading>
+    <div class="adresses-wrapper">
+        <div class="adresses__content" *ngFor="let adress of adresses">
+            <span class="adresses__name">{{ adress.name }}</span>
+            <span class="adresses__street">{{ adress.street }}</span>
+            <span class="adresses__city">{{ adress.city }}</span>
+            <span class="adresses__city">{{ adress.email }}</span>
+        </div>
+    </div>
+</div>
