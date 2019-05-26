@@ -1,0 +1,9 @@
+<div class="teaser">
+    <kx-heading [text]="'&Uuml;ber uns'"></kx-heading>
+    <div class="teaser__wrapper">
+        <div class="teaser__content" *ngFor="let teaser of teasers">
+            <span class="teaser__title">{{ teaser.title }}</span>
+            <span class="teaser__text">{{ teaser.text }}</span>
+        </div>
+    </div>
+</div>

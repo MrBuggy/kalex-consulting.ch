@@ -1,0 +1,53 @@
+@import '../../../../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../../../../shared/utils/colors/css/colors.scss';
+@import '../../../../shared/utils/spacings/css/spacings.scss';
+@import '../../../../shared/utils/typos/css/typos.scss';
+
+.teaser {
+
+}
+
+.teaser__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mq-size-m) {
+        flex-direction: row;
+    }
+}
+
+.teaser__content {
+    background-color: $kx-blue;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    opacity: 0.9;
+    padding: $space-medium-desktop $space-large;
+    margin-bottom: $space-medium;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $mq-size-m) {
+        margin-bottom: 0;
+        margin-right: $space-super-small;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.teaser__title {
+    @include typo-semibold();
+    font-size: 22px;
+    padding-bottom: $space-small;
+}
+
+.teaser__text {
+    @media (min-width: $mq-size-m) {
+        opacity: 0;
+    }
+}

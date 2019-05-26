@@ -1,0 +1,18 @@
+@import '../../../../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../../../../shared/utils/colors/css/colors.scss';
+@import '../../../../shared/utils/typos/css/typos.scss';
+
+.heading {
+    @include typo-semibold();
+    color: $kx-blue;
+    font-size: 28px;
+    text-align: center;
+
+    @media (min-width: $mq-size-m) {
+        font-size: 36px;
+    }
+
+    @media (min-width: $mq-size-l) {
+        font-size: 48px;
+    }
+}

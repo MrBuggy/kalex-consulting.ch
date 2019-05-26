@@ -7,7 +7,7 @@ $mq-size-1400: 1400px;
 $mq-size-1600: 1600px;
 
 .stage-header {
-    border-bottom: 5px solid $kx-blue;
+    //border-bottom: 5px solid $kx-blue;
     position: relative;
     width: 100%;
 
@@ -104,11 +104,26 @@ $mq-size-1600: 1600px;
 }
 
 .stage-header__bg-image {
-    display: none;
+    position: relative;
+    height: 250px;
 
     @media (min-width: $mq-size-m) {
         display: block;
         height: 700px;
         width: 100%;
+    }
+}
+
+.stage-header__bg-overlay {
+    background-color: $kx-blue;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    top: 0;
+    width: 100%;
+
+    @media (min-width: $mq-size-m) {
+        display: none;
     }
 }
