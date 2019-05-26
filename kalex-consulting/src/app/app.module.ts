@@ -9,6 +9,7 @@ import { KxTeaserComponent } from './components/molecules/kx-teaser/kx-teaser.co
 import { KxHeadingComponent } from './components/atoms/kx-heading/kx-heading.component';
 import { KxTextImageComponent } from './components/molecules/kx-text-image/kx-text-image.component';
 import { KxAdressesComponent } from './components/molecules/kx-adresses/kx-adresses.component';
+import { KxFooterComponent } from './components/molecules/kx-footer/kx-footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { KxAdressesComponent } from './components/molecules/kx-adresses/kx-adres
     KxTeaserComponent,
     KxHeadingComponent,
     KxTextImageComponent,
-    KxAdressesComponent
+    KxAdressesComponent,
+    KxFooterComponent
   ],
   imports: [
     BrowserModule,

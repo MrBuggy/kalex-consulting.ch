@@ -12,8 +12,8 @@
     margin-bottom: $space-medium;
 
     @media (min-width: $mq-size-m) {
-        float: left;
-        margin-right: $space-medium;
+        float: right;
+        margin-left: $space-medium;
         width: 500px;
     }
 }
