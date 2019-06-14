@@ -1,9 +1,14 @@
-<div class="teaser">
-    <kx-heading [text]="'Angebote'"></kx-heading>
+<div class="teaser{{ modifier !== undefined ? ' teaser--' + modifier : ''}}">
+    <kx-heading [anchor]="'offers'" [text]="'Angebote'"></kx-heading>
     <div class="teaser__wrapper">
-        <div class="teaser__content" *ngFor="let teaser of teasers">
+        <div class="teaser__content" *ngFor="let teaser of teasers"
+        [class.state-teaser__content--open]="teaser.isOpen"
+        [class.state-teaser__content--collapsed]="!teaser.isOpen"
+        (click)="toggleTeasers(teaser)"
+        >
             <span class="teaser__title">{{ teaser.title }}</span>
             <span class="teaser__text">{{ teaser.text }}</span>
+            <div class="teaser__content-overlay" *ngIf="modifier == 'image'"></div>
         </div>
     </div>
 </div>

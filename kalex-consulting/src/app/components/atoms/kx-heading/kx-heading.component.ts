@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
     styleUrls: ['./kx-heading.component.scss']
 })
 export class KxHeadingComponent implements OnInit {
+    @Input() anchor: string;
     @Input() text: string;
 
     constructor() { }

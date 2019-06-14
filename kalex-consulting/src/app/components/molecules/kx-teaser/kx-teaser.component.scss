@@ -3,8 +3,13 @@
 @import '../../../../shared/utils/spacings/css/spacings.scss';
 @import '../../../../shared/utils/typos/css/typos.scss';
 
-.teaser {
+$transition-duration: 0.3s;
+$transition-timing-function: ease-in-out;
 
+.teaser {
+    @media (min-width: $mq-size-m) {
+        cursor: pointer;
+    }
 }
 
 .teaser__wrapper {
@@ -21,7 +26,6 @@
     color: $white;
     display: flex;
     flex-direction: column;
-    height: 300px;
     opacity: 0.9;
     padding: $space-medium-desktop $space-large;
     margin-bottom: $space-medium;
@@ -33,6 +37,14 @@
     @media (min-width: $mq-size-m) {
         margin-bottom: 0;
         margin-right: $space-super-small;
+        transition:
+            background-color $transition-duration $transition-timing-function,
+            width $transition-duration $transition-timing-function;
+        height: 300px;
+
+        &:hover {
+            background-color: $kx-blue-milky;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -51,5 +63,62 @@
 
     @media (min-width: $mq-size-m) {
         opacity: 0;
+        transition: opacity $transition-duration $transition-timing-function;
+    }
+}
+
+.teaser--image {
+    .teaser__content {
+        @media (min-width: $mq-size-m) {
+            position: relative;
+
+            &:nth-child(1) {
+                background-image: url('../../../../assets/images/kalex-consulting-stage-image.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            &:nth-child(2) {
+                background-image: url('../../../../assets/images/kalex-consulting-stage-image.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        }
+    }
+
+    .teaser__title,
+    .teaser__text {
+        @media (min-width: $mq-size-m) {
+            z-index: 1;
+        }
+    }
+
+    .teaser__content-overlay {
+        @media (min-width: $mq-size-m) {
+            background-color: $kx-blue;
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+.state-teaser__content--open {
+    @media (min-width: $mq-size-m) {
+        width: 75%;
+
+        .teaser__text {
+            opacity: 1;
+        }
+    }
+}
+
+.state-teaser__content--collapsed {
+    @media (min-width: $mq-size-m) {
+        width: 25%;
     }
 }

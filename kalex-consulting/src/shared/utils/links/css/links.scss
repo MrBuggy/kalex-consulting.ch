@@ -1,0 +1,12 @@
+@import '../../colors/css/colors.scss';
+
+@mixin link-base() {
+    color: $white;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: $white;
+    }
+}
