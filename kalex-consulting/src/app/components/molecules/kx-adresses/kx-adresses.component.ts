@@ -9,15 +9,15 @@ export class KxAdressesComponent implements OnInit {
     adresses: Array<Object> = [
         {
             name: 'Kalex Consulting GmbH',
-            street: 'Musterstrasse 1',
-            city: '9000 St. Gallen',
-            email: 'info@kalex-consulting.ch'
+            street: 'Kugelgasse 12',
+            city: '8000 Zürich',
+            email: '<a href="mailto:info@kalex-consulting.ch">info@kalex-consulting.ch</a>'
         },
         {
             name: 'Kalex Consulting GmbH',
-            street: 'Musterstrasse 1',
-            city: '9000 St. Gallen',
-            email: 'info@kalex-consulting.ch'
+            street: 'Terazije 22',
+            city: '11000 Beograd',
+            email: '<a href="mailto:info@kalex-consulting.ch">info@kalex-consulting.ch</a>'
         }
     ]
 

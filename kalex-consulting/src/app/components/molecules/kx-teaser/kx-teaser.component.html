@@ -7,7 +7,7 @@
         (click)="toggleTeasers(teaser)"
         >
             <span class="teaser__title">{{ teaser.title }}</span>
-            <span class="teaser__text">{{ teaser.text }}</span>
+            <span class="teaser__text" [innerHTML]="teaser.text"></span>
             <div class="teaser__content-overlay" *ngIf="modifier == 'image'"></div>
         </div>
     </div>

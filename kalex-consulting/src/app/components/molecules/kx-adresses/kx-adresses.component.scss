@@ -1,5 +1,6 @@
 @import '../../../../shared/utils/breakpoints/css/breakpoints.scss';
 @import '../../../../shared/utils/colors/css/colors.scss';
+@import '../../../../shared/utils/links/css/links.scss';
 @import '../../../../shared/utils/spacings/css/spacings.scss';
 @import '../../../../shared/utils/typos/css/typos.scss';
 
@@ -42,4 +43,11 @@
 
 .adresses__name {
     @include typo-semibold();
+}
+
+.adresses__email {
+    a {
+        @include link-base();
+        color: $kx-blue;
+    }
 }
