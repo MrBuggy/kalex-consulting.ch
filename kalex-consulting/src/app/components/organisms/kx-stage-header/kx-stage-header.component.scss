@@ -89,6 +89,19 @@ $mq-size-1600: 1600px;
 
 .stage-header__link {
     @include link-base();
+    color: $kx-blue-dark;
+
+    &:hover {
+        color: $kx-blue-dark;
+    }
+
+    @media (min-width: $mq-size-1400) {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
 }
 
 .state-stage-header__nav-mobile--open {
@@ -125,6 +138,8 @@ button {
 
 .stage-header__nav-list-item {
     color: $kx-blue-dark;
+    font-size: 25px;
+    margin-bottom: $space-medium;
     margin-right: $space-super-large;
 
     &:last-child {
@@ -134,6 +149,7 @@ button {
     @media (min-width: $mq-size-m) {
         @include typo-light();
         font-size: 20px;
+        margin-bottom: 0;
 
         &:hover {
             cursor: pointer;

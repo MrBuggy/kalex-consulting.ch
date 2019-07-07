@@ -10,6 +10,7 @@ import { KxHeadingComponent } from './components/atoms/kx-heading/kx-heading.com
 import { KxTextImageComponent } from './components/molecules/kx-text-image/kx-text-image.component';
 import { KxAdressesComponent } from './components/molecules/kx-adresses/kx-adresses.component';
 import { KxFooterComponent } from './components/molecules/kx-footer/kx-footer.component';
+import { KxHamburgerComponent } from './components/molecules/kx-hamburger/kx-hamburger.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { KxFooterComponent } from './components/molecules/kx-footer/kx-footer.co
     KxHeadingComponent,
     KxTextImageComponent,
     KxAdressesComponent,
-    KxFooterComponent
+    KxFooterComponent,
+    KxHamburgerComponent
   ],
   imports: [
     BrowserModule,

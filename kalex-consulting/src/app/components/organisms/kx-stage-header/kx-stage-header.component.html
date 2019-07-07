@@ -14,7 +14,7 @@
                     <div class="stage-header__meta">
 
                     </div>
-                    <button (click)="toggleNav = !toggleNav">toggle!</button>
+                    <kx-hamburger (click)="toggleNavigation()" [toggleNav]="toggleNav"></kx-hamburger>
                 </nav>
             </div>
         </div>
@@ -25,9 +25,9 @@
     </div>
     <div class="stage-header__nav-mobile" [class.state-stage-header__nav-mobile--open]="toggleNav">
         <ul class="stage-header__nav-list">
-            <li class="stage-header__nav-list-item">Home</li>
-            <li class="stage-header__nav-list-item">Über mich</li>
-            <li class="stage-header__nav-list-item">Kontakt</li>
+            <li class="stage-header__nav-list-item" *ngFor="let item of navList">
+                <a class="stage-header__link" href="{{item.anchor}}" (click)="anchorScroll(item.anchor)">{{item.name}}</a>
+            </li>
         </ul>
     </div>
 </div>

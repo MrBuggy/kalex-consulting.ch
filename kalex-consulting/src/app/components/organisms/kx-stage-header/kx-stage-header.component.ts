@@ -32,7 +32,7 @@ export class KxStageHeaderComponent implements OnInit {
     }
 
     anchorScroll(destination: string) {
-        console.log(destination);
+        this.toggleNavigation();
         const element = document.querySelector(destination);
 
         if (element) {
@@ -40,4 +40,7 @@ export class KxStageHeaderComponent implements OnInit {
         }
     }
 
+    toggleNavigation() {
+        this.toggleNav = !this.toggleNav;
+    }
 }
