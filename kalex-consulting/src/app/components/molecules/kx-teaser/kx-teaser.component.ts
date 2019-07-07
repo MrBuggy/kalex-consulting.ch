@@ -11,12 +11,12 @@ export class KxTeaserComponent implements OnInit {
     teasers = [
         {
             title: 'Startup',
-            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est repudiandae consectetur perspiciatis aliquid nesciunt optio tenetur, exercitationem esse placeat aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae consequatur doloribus molestiae eos eligendi nam cupiditate iure pariatur! Sed, doloribus.',
+            text: 'Zwei der Top 10 Startups in der Schweiz im 2018 haben ihr Fundament in Belgrad, der Haupstadt Serbiens. Was sind die Gründe? Ein sehr hoher Bildungsgrad, unzählige junge Talente und tiefe Lohnkosten, welche vor allem für Startups relevant sind. Möchten Sie Ihr Startup auf Vordermann bringen? Verkürzen Sie mit einer Auslagerung nach Serbien den Startpunkt der Eröffnung. Des weiteren können Sie Synergien nutzen und den Markt in Serbien gleichzeitig angehen und expandieren.',
             isOpen: true
         },
         {
             title: 'Firmen',
-            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est repudiandae consectetur perspiciatis aliquid nesciunt optio tenetur, exercitationem esse placeat aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae consequatur doloribus molestiae eos eligendi nam cupiditate iure pariatur! Sed, doloribus.',
+            text: 'Nearshoring ist die Verlagerung betrieblicher Aktivitäten ins nahegelegene Ausland. Nearshoring soll wie Offshoring die Personalkosten senken. Dabei ist der monetäre Vorteil durch Lohnunterschiede weniger hoch als beim Farshoring. Die größere kulturelle und räumliche Nähe bei nahezu gleicher Zeitzone vereinfacht jedoch dieKooperation massgebend. Diese Form des Offshorings kann auch genutzt werden, um sich auf dem Markt des gewählten Landes zu positionieren und somit eine Win-win-Situation zu realisieren.',
             isOpen: false
         }
     ];
