@@ -10,19 +10,23 @@ export class KxStageHeaderComponent implements OnInit {
     navList: Array<Object> = [
         {
             name: "Home",
-            anchor: "#home"
+            anchor: "#home",
+            destination: "home"
         },
         {
             name: "Angebote",
-            anchor: "#offers"
+            anchor: "#offers",
+            destination: "offers"
         },
         {
             name: "Portrait",
-            anchor: "#portrait"
+            anchor: "#portrait",
+            destination: "portrait"
         },
         {
             name: "Kontakt",
-            anchor: "#contact"
+            anchor: "#contact",
+            destination: "contact"
         }
     ]
 
@@ -31,13 +35,8 @@ export class KxStageHeaderComponent implements OnInit {
     ngOnInit() {
     }
 
-    anchorScroll(destination: string) {
+    anchorScroll(ev: Object, destination: string) {
         this.toggleNavigation();
-        const element = document.querySelector(destination);
-
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
     }
 
     toggleNavigation() {
